@@ -1,0 +1,81 @@
+﻿@model ModuloFinanceiro.Models.Mensalidades
+
+@{
+    ViewBag.Title = "Apagar";
+}
+
+<h2>Apagar Menalidade</h2>
+
+<h3>Deseja apagar esta mensalidade?</h3>
+<div>
+    <h4>Mensalidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorDoCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorDoCurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Juros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Juros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bolsa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bolsa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mensalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mensalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDePagamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDePagamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDeVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDeVencimento)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Apagar" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

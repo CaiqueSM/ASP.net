@@ -1,0 +1,83 @@
+﻿@model ModuloFinanceiro.Models.Mensalidades
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Mensalidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorDoCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorDoCurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Juros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Juros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bolsa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bolsa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mensalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mensalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDePagamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDePagamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDeVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDeVencimento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Atualizar", "Edit", new { id = Model.Curso }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>
